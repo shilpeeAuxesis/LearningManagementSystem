@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color> <!--For Tool bar-->
+    <color name="colorPrimaryDark">#000000</color>  <!--For Status bar-->
+    <color name="colorAccent">#F6F6F6</color> <!--For icon color-->
+    <color name="color_background">#f0f0f0</color>
+    <color name="color_blue">#337ab7</color>
+   <!-- <color name="color_background">#dbdbdb</color>
+-->
+   <!-- <color name="colorActivated">#D03CB371</color>
+    <color name="colorHighlight">#9F3CB371</color>
+-->
+    <color name="colorGray_1">#4F4F4F</color>
+    <color name="colorGray_2">#686b78</color>
+    <color name="colorGray_hint">#AE686B78</color>
+
+     <color name="colorGray_3">#E1E1E1</color>
+     <color name="colorGray_4">#dbdbdb</color>
+     <color name="colorGray_5">#E9ECF1</color>
+
+
+    <color name="colorGray_bg">#E9ECF1</color>
+    <!--  <color name="light_gray_text">#6e6e6e</color>
+      <color name="trans_gray">#98dedede</color>-->
+
+   <!-- <color name="colorPrimary">#3CB371</color> &lt;!&ndash;For Tool bar&ndash;&gt;
+    <color name="colorPrimaryDark">#3AAD6D</color>  &lt;!&ndash;For Status bar&ndash;&gt;
+    <color name="colorAccent">#3CB371</color> &lt;!&ndash;For icon color&ndash;&gt;
+-->
+</resources>

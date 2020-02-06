@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-       initUI();
+      initUI();
     }
     private void initUI() {
         if (isInternetConnected(getApplicationContext())) {

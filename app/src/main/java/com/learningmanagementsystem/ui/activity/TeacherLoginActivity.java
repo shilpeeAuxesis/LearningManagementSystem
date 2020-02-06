@@ -29,7 +29,7 @@ public class TeacherLoginActivity extends AppCompatActivity {
     private void initUI() {
         tv_back_arrow = findViewById(R.id.tv_back_arrow);
         tvHeaderTitle = findViewById(R.id.tvHeaderTitle);
-        tvHeaderTitle.setText(getResources().getString(R.string.teacher_login));
+        tvHeaderTitle.setText(getResources().getString(R.string.login));
         tv_back_arrow.setOnClickListener(v -> {
             onBackPressed();
         });

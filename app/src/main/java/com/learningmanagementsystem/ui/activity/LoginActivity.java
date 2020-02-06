@@ -7,9 +7,11 @@ import android.util.Log;
 import android.widget.LinearLayout;
 import com.learningmanagementsystem.R;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
-    LinearLayout lLayoutTeacher, lLayoutParent;
+    CircleImageView circleImgTeacher,circleImgParent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +23,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initUI() {
-        lLayoutTeacher = findViewById(R.id.lLayoutTeacher);
-        lLayoutParent = findViewById(R.id.lLayoutParent);
+        circleImgTeacher = findViewById(R.id.circleImgTeacher);
+        circleImgParent = findViewById(R.id.circleImgParent);
 
-        lLayoutTeacher.setOnClickListener(v -> {
+        circleImgTeacher.setOnClickListener(v -> {
             startActivity(new Intent(LoginActivity.this, TeacherLoginActivity.class));
             overridePendingTransition(R.anim.enter, R.anim.exit);
         });
 
-        lLayoutParent.setOnClickListener(v -> {
+        circleImgParent.setOnClickListener(v -> {
             startActivity(new Intent(LoginActivity.this, ParentRegisterActivity.class));
             overridePendingTransition(R.anim.enter, R.anim.exit);
         });

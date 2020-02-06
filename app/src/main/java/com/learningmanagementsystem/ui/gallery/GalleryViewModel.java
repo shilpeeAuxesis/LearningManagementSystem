@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 public class GalleryViewModel extends ViewModel {
     private static final String TAG = "GalleryViewModel";
+
     private MutableLiveData<String> mText;
 
     public GalleryViewModel() {
@@ -16,6 +17,5 @@ public class GalleryViewModel extends ViewModel {
     public LiveData<String> getText() {
         return mText;
     }
-
 
 }

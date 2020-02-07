@@ -1,4 +1,4 @@
-package com.learningmanagementsystem.ui.activity;
+package com.learningmanagementsystem.parent_account.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,35 +9,34 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.learningmanagementsystem.TeacherDashboardActivity;
+
 import com.learningmanagementsystem.R;
+import com.learningmanagementsystem.parent_account.ParentDashboardActivity;
+import com.learningmanagementsystem.ui.activity.TeacherLoginActivity;
 import com.learningmanagementsystem.ui.constant.ProgressDialog;
+
 import static com.learningmanagementsystem.ui.constant.Utils.isInternetConnected;
-import static com.learningmanagementsystem.ui.constant.Utils.setPreference;
 import static com.learningmanagementsystem.ui.constant.Utils.showToast;
 
-public class TeacherLoginActivity extends AppCompatActivity {
-    private static final String TAG = "TeacherLoginActivity";
+public class ParentLoginActivity extends AppCompatActivity {
     TextView tv_back_arrow, tvHeaderTitle, tvForgetPassword;
     EditText edtUsername, edtPassword;
     Button btnLogin;
     RelativeLayout rLayoutRegister;
     String error_msg = "";
     ProgressDialog pd;
-    String message = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher_login);
-
+        setContentView(R.layout.activity_parent_login);
         initUI();
     }
 
     private void initUI() {
         tv_back_arrow = findViewById(R.id.tv_back_arrow);
         tvHeaderTitle = findViewById(R.id.tvHeaderTitle);
-        tvHeaderTitle.setText(getResources().getString(R.string.teacher_login));
+        tvHeaderTitle.setText(getResources().getString(R.string.parent_login));
+
         tv_back_arrow.setOnClickListener(v -> {
             onBackPressed();
         });
@@ -51,31 +50,28 @@ public class TeacherLoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(v -> {
             if (isInternetConnected(getApplicationContext())) {
                 if (Validation()) {
-                    getLogin();
+                    getParentLogin();
                 } else {
-                    showToast(TeacherLoginActivity.this, error_msg);
+                    showToast(ParentLoginActivity.this, error_msg);
                 }
             } else {
-                showToast(TeacherLoginActivity.this, getResources().getString(R.string.oops_connect_your_internet));
+                showToast(ParentLoginActivity.this, getResources().getString(R.string.oops_connect_your_internet));
             }
         });
 
         rLayoutRegister.setOnClickListener(v -> {
-            startActivity(new Intent(TeacherLoginActivity.this, TeacherRegisterActivity.class));
+            startActivity(new Intent(ParentLoginActivity.this, ParentRegisterActivity.class));
         });
 
         tvForgetPassword.setOnClickListener(v -> {
-            showToast(TeacherLoginActivity.this, "Coming soon...");
+            showToast(ParentLoginActivity.this, "Coming soon...");
         });
 
     }
 
-    private void getLogin() {
-        String username = edtUsername.getText().toString().trim();
-        String password = edtPassword.getText().toString().trim();
-        setPreference(TeacherLoginActivity.this, "username", username);
-        showToast(TeacherLoginActivity.this,  getResources().getString(R.string.login_succ));
-        startActivity(new Intent(TeacherLoginActivity.this, TeacherDashboardActivity.class));
+    private void getParentLogin() {
+        showToast(ParentLoginActivity.this,  getResources().getString(R.string.login_succ));
+        startActivity(new Intent(ParentLoginActivity.this, ParentDashboardActivity.class));
     }
 
     private boolean Validation() {

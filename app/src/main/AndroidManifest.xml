@@ -14,7 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activity.TeacherLoginActivity"></activity>
+        <activity android:name=".parent_account.ui.activity.ParentLoginActivity"></activity>
+        <activity
+            android:name=".parent_account.ParentDashboardActivity"
+            android:label="@string/title_activity_parent_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.TeacherLoginActivity" />
         <activity android:name=".ui.activity.ParentRegisterActivity" />
         <activity android:name=".ui.activity.TeacherRegisterActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
@@ -26,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".TeacherDashboardActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 

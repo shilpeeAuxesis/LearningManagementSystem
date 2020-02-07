@@ -3,41 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_my_space_parent">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.learningmanagementsystem.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_my_space_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.my_space_parent.MySpaceParentFragment"
+        android:label="@string/menu_my_space"
+        tools:layout="@layout/fragment_my_space_parent" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.learningmanagementsystem.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_contact_us_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.parent_contact_us.ContactUSParentFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_parent_contact_us" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.learningmanagementsystem.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_blog_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.blog_parent.BlogParentFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_blog_parent" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.learningmanagementsystem.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_about_us_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.about_us_parent.AboutUSParentFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_about_us_parent" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.learningmanagementsystem.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_fag_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.faq_parent.FAQParentFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_faq_parent" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.learningmanagementsystem.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>

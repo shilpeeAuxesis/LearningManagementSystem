@@ -3,42 +3,61 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
 
     <!--Teacher Login-->
     <string name="login">Login</string>
+    <string name="teacher_login">Teacher Login</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
     <string name="login_macc">If you Don"'"t have an account ?</string>
-    <string name="register">Register Now</string>
-
+    <string name="register_now">Register Now</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login_succ">Login Successfully...</string>
     <string name="terms_and_condition">I agree to terms &amp; conditions</string>
 
 
-    <string name="already_registered">Already Registered ?</string>
-
-
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="enter_skype_id">Enter Skype Id</string>
+    <string name="enter_subject_name">Enter subject name</string>
+    <string name="upload_resume">Upload resume</string>
+    <string name="no_file_chosen">No file chosen</string>
+    <string name="register">Register</string>
     <string name="teacher_register">Teacher Registration</string>
-    <string name="register_txt">Register</string>
+    <string name="teacher_register_succ">Teacher Registered successfully...</string>
+
+
+
+
+    <!--For Parent Login-->
+    <string name="parent_login">Parent Login</string>
+
+    <!-- <string name="logout_succ">Logout Successfully..</string>
+     -->
+
+
+
 
 
     <string name="login_mess">If you are already Register</string>
-
-
     <string name="clickHere">Click here to Login</string>
-
     <string name="login_now">Login Now</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <!--For Teacher Dashboard-->
+    <string name="menu_my_space">My space</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_Blog">Blog</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_faqs">FAQ</string>
+    <string name="menu_logout">Logout</string>
+
+
 
     <string name="yes">Yes</string>
     <string name="no_internet">No internet Connection</string>
     <string name="oops_connect_your_internet">Oops! Connect Your Internet</string>
+    <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
+
 
 </resources>

@@ -17,8 +17,7 @@ public class MySpaceParentFragment extends Fragment {
     private MySpaceParentViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(MySpaceParentViewModel.class);
+        homeViewModel = ViewModelProviders.of(this).get(MySpaceParentViewModel.class);
         View root = inflater.inflate(R.layout.fragment_my_space_parent, container, false);
         /*final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {

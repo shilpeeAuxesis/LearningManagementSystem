@@ -18,8 +18,7 @@ public class AboutUSParentFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
+        toolsViewModel = ViewModelProviders.of(this).get(ToolsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_about_us_parent, container, false);
 
         /*final TextView textView = root.findViewById(R.id.text_tools);

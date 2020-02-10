@@ -41,7 +41,6 @@ public class MySpaceParentFragment extends Fragment {
             }
         });*/
 
-
         return root;
     }
 

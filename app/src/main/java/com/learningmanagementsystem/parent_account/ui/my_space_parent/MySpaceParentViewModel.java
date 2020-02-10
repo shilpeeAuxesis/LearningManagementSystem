@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 
 public class MySpaceParentViewModel extends ViewModel {
+    private static final String TAG = "MySpaceParentViewModel";
 
     private MutableLiveData<String> mText;
 

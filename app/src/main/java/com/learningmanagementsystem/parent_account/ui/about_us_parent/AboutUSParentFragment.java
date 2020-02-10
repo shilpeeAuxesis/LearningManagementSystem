@@ -14,11 +14,11 @@ import com.learningmanagementsystem.R;
 
 public class AboutUSParentFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private AboutUsViewModel toolsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel = ViewModelProviders.of(this).get(ToolsViewModel.class);
+        toolsViewModel = ViewModelProviders.of(this).get(AboutUsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_about_us_parent, container, false);
 
         /*final TextView textView = root.findViewById(R.id.text_tools);

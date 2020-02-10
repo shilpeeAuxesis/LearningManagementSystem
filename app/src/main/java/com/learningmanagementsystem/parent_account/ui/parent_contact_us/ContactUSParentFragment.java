@@ -10,11 +10,11 @@ import androidx.lifecycle.ViewModelProviders;
 import com.learningmanagementsystem.R;
 
 public class ContactUSParentFragment extends Fragment {
-
-    private ContactUsViewModel galleryViewModel;
+    private static final String TAG = "ContactUSParentFragment";
+    private ContactUsViewModel contactUsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel = ViewModelProviders.of(this).get(ContactUsViewModel.class);
+        contactUsViewModel = ViewModelProviders.of(this).get(ContactUsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_parent_contact_us, container, false);
 
         /*final TextView textView = root.findViewById(R.id.text_gallery);
@@ -24,6 +24,7 @@ public class ContactUSParentFragment extends Fragment {
                 textView.setText(s);
             }
         });*/
+
         return root;
     }
 }

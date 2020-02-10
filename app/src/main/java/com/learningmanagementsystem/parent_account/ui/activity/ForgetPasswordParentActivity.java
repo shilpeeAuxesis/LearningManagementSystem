@@ -1,7 +1,6 @@
 package com.learningmanagementsystem.parent_account.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -15,7 +14,7 @@ import static com.learningmanagementsystem.ui.constant.Utils.showToast;
 
 public class ForgetPasswordParentActivity extends AppCompatActivity {
     private static final String TAG = "ForgetPasswordParentAct";
-    TextView tv_back_arrow, tvHeaderTitle;
+    TextView tv_back_arrow,tvHeaderTitle;
     String error_msg = "";
     EditText edtEmail;
     Button btnForgotPassword;

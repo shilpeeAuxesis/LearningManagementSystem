@@ -61,7 +61,6 @@ public class LoginParentActivity extends AppCompatActivity {
 
         rLayoutRegister.setOnClickListener(v -> {
             startActivity(new Intent(LoginParentActivity.this, RegisterParentActivity.class));
-
         });
 
         tvForgetPassword.setOnClickListener(v -> {

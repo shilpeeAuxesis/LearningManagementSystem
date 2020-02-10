@@ -16,7 +16,6 @@
     <string name="login_succ">Login Successfully...</string>
     <string name="terms_and_condition">I agree to terms &amp; conditions</string>
 
-
     <string name="enter_email_address">Enter email address</string>
     <string name="enter_full_name">Enter full name</string>
     <string name="enter_skype_id">Enter Skype Id</string>
@@ -28,14 +27,11 @@
     <string name="teacher_register_succ">Teacher Registered successfully...</string>
     <string name="forgot_password">Forget password</string>
 
-
     <!--For Parent Login-->
     <string name="parent_login">Parent Login</string>
     <string name="parent_register">Parent Registration</string>
     <!-- <string name="logout_succ">Logout Successfully..</string>
      -->
-
-
     <string name="login_mess">If you are already Register</string>
     <string name="clickHere">Click here to Login</string>
     <string name="login_now">Login Now</string>
@@ -55,8 +51,6 @@
     <string name="oops_connect_your_internet">Oops! Connect Your Internet</string>
     <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_data_found">No data found</string>
     <string name="enter_student_name">Enter student name</string>
     <string name="enter_parent_name">Enter parent name</string>

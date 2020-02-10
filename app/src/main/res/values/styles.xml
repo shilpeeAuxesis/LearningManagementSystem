@@ -1,5 +1,4 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -10,8 +9,7 @@
         <item name="colorControlActivated">@color/color_blue</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
         <!--<item name="android:navigationBarColor">@color/colorPrimary</item>-->
-        <!--  <item name="colorControlHighlight">@color/colorHighlight</item>
-        -->
+        <!--  <item name="colorControlHighlight">@color/colorHighlight</item>-->
     </style>
 
     <!--For Tittle text size-->
@@ -25,6 +23,7 @@
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@color/colorPrimaryDark</item>
     </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -33,5 +32,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 </resources>

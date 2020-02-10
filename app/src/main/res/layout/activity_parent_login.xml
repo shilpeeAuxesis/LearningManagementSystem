@@ -7,7 +7,7 @@
     android:background="@color/color_background"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".parent_account.ui.activity.ParentLoginActivity">
+    tools:context=".parent_account.ui.activity.LoginParentActivity">
 
     <include
         layout="@layout/header"
@@ -135,4 +135,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rLayoutRegister"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

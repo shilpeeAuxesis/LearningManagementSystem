@@ -26,38 +26,41 @@
     <string name="register">Register</string>
     <string name="teacher_register">Teacher Registration</string>
     <string name="teacher_register_succ">Teacher Registered successfully...</string>
-
-
+    <string name="forgot_password">Forget password</string>
 
 
     <!--For Parent Login-->
     <string name="parent_login">Parent Login</string>
-
+    <string name="parent_register">Parent Registration</string>
     <!-- <string name="logout_succ">Logout Successfully..</string>
      -->
-
-
-
 
 
     <string name="login_mess">If you are already Register</string>
     <string name="clickHere">Click here to Login</string>
     <string name="login_now">Login Now</string>
 
-    <!--For Teacher Dashboard-->
+    <!--For  Dashboard-->
     <string name="menu_my_space">My space</string>
     <string name="menu_contact_us">Contact us</string>
+    <string name="menu_my_parent_account">My profile</string>
     <string name="menu_Blog">Blog</string>
     <string name="menu_about_us">About us</string>
     <string name="menu_faqs">FAQ</string>
     <string name="menu_logout">Logout</string>
-
-
+    <string name="logout_succ">Logout Successfully..</string>
 
     <string name="yes">Yes</string>
     <string name="no_internet">No internet Connection</string>
     <string name="oops_connect_your_internet">Oops! Connect Your Internet</string>
     <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_found">No data found</string>
+    <string name="enter_student_name">Enter student name</string>
+    <string name="enter_parent_name">Enter parent name</string>
+    <string name="submit">Submit</string>
 
 
 </resources>

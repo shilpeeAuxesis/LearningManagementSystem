@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import static com.learningmanagementsystem.ui.constant.Utils.getPreference;
 
 public class TeacherDashboardActivity extends AppCompatActivity {
@@ -30,14 +32,19 @@ public class TeacherDashboardActivity extends AppCompatActivity {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
 
-        View v = navigationView.getHeaderView(0);
-        tv_user_name = (TextView) v.findViewById(R.id.tv_user_name);
+        View headerView = navigationView.getHeaderView(0);
+        tv_user_name = (TextView) headerView.findViewById(R.id.tv_user_name);
 
         String mName = getPreference(TeacherDashboardActivity.this, "username").toLowerCase();
         if (mName != null && !mName.isEmpty()) {
             String userName = mName.substring(0, 1).toUpperCase() + mName.substring(1);
             tv_user_name.setText(userName);
         }
+
+        headerView.findViewById(R.id.nav_header).setOnClickListener(v -> {
+            Toast.makeText(this, "Header view is clicked...", Toast.LENGTH_SHORT).show();
+        });
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(

@@ -14,13 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".parent_account.ui.activity.ParentLoginActivity"></activity>
+        <activity android:name=".parent_account.ui.activity.ForgetPasswordParentActivity"></activity>
+        <activity android:name=".parent_account.ui.activity.LoginParentActivity" />
+        <activity android:name=".parent_account.ui.activity.RegisterParentActivity" />
         <activity
             android:name=".parent_account.ParentDashboardActivity"
             android:label="@string/title_activity_parent_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activity.TeacherLoginActivity" />
-        <activity android:name=".ui.activity.ParentRegisterActivity" />
         <activity android:name=".ui.activity.TeacherRegisterActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.SplashActivity">

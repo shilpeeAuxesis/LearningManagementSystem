@@ -37,6 +37,7 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:visibility="gone"
                         android:id="@+id/circleImg"
                         android:layout_width="@dimen/_150sdp"
                         android:layout_height="@dimen/_150sdp"

@@ -35,4 +35,10 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_faq_parent" />
 
+    <fragment
+        android:id="@+id/nav_my_account_parent"
+        android:name="com.learningmanagementsystem.parent_account.ui.myaccount_parent.MyAccountParentFragment"
+        android:label="@string/menu_my_parent_account"
+        tools:layout="@layout/fragment_my_account_parent" />
+
 </navigation>

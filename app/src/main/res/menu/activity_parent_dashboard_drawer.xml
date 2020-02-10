@@ -8,6 +8,9 @@
             android:id="@+id/nav_my_space_parent"
             android:title="@string/menu_my_space" />
         <item
+            android:id="@+id/nav_my_account_parent"
+            android:title="@string/menu_my_parent_account" />
+        <item
             android:id="@+id/nav_contact_us_parent"
             android:title="@string/menu_contact_us" />
         <item

@@ -50,11 +50,16 @@ public class TeacherLoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(v -> {
             if (isInternetConnected(getApplicationContext())) {
-                if (Validation()) {
+                String username = edtUsername.getText().toString().trim();
+                String password = edtPassword.getText().toString().trim();
+                setPreference(TeacherLoginActivity.this, "username", username);
+                showToast(TeacherLoginActivity.this,  getResources().getString(R.string.login_succ));
+                startActivity(new Intent(TeacherLoginActivity.this, TeacherDashboardActivity.class));
+               /* if (Validation()) {
                     getLogin();
                 } else {
                     showToast(TeacherLoginActivity.this, error_msg);
-                }
+                }*/
             } else {
                 showToast(TeacherLoginActivity.this, getResources().getString(R.string.oops_connect_your_internet));
             }
@@ -67,7 +72,6 @@ public class TeacherLoginActivity extends AppCompatActivity {
         tvForgetPassword.setOnClickListener(v -> {
             showToast(TeacherLoginActivity.this, "Coming soon...");
         });
-
     }
 
     private void getLogin() {

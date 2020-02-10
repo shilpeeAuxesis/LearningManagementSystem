@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import com.learningmanagementsystem.R;
-import com.learningmanagementsystem.parent_account.ui.activity.ParentLoginActivity;
+import com.learningmanagementsystem.parent_account.ui.activity.LoginParentActivity;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class LoginActivity extends AppCompatActivity {
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         circleImgParent.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, ParentLoginActivity.class));
+            startActivity(new Intent(LoginActivity.this, LoginParentActivity.class));
             overridePendingTransition(R.anim.enter, R.anim.exit);
         });
     }

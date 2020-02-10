@@ -11,10 +11,10 @@ import com.learningmanagementsystem.R;
 
 public class ContactUSParentFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private ContactUsViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel = ViewModelProviders.of(this).get(GalleryViewModel.class);
+        galleryViewModel = ViewModelProviders.of(this).get(ContactUsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_parent_contact_us, container, false);
 
         /*final TextView textView = root.findViewById(R.id.text_gallery);

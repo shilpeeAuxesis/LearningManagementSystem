@@ -14,10 +14,10 @@ import com.learningmanagementsystem.R;
 
 public class FAQParentFragment extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private FAQViewModel shareViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel = ViewModelProviders.of(this).get(ShareViewModel.class);
+        shareViewModel = ViewModelProviders.of(this).get(FAQViewModel.class);
         View root = inflater.inflate(R.layout.fragment_faq_parent, container, false);
        /* final TextView textView = root.findViewById(R.id.text_share);
         shareViewModel.getText().observe(this, new Observer<String>() {

@@ -1,16 +1,17 @@
-package com.learningmanagementsystem.parent_account.ui.blog_parent;
+package com.learningmanagementsystem.parent_account.ui.faq_parent;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+
+public class FAQViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public FAQViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is share fragment");
     }
 
     public LiveData<String> getText() {

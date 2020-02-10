@@ -12,14 +12,14 @@ import com.learningmanagementsystem.R;
 
 public class BlogParentFragment extends Fragment {
     private static final String TAG = "BlogParentFragment";
-    private SlideshowViewModel slideshowViewModel;
+    private BlogViewModel blogViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel = ViewModelProviders.of(this).get(SlideshowViewModel.class);
+        blogViewModel = ViewModelProviders.of(this).get(BlogViewModel.class);
         View root = inflater.inflate(R.layout.fragment_blog_parent, container, false);
 
         /*final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(this, new Observer<String>() {
+        blogViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

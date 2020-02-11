@@ -51,7 +51,7 @@
     <string name="oops_connect_your_internet">Oops! Connect Your Internet</string>
     <string name="title_activity_parent_dashboard">ParentDashboardActivity</string>
 
-    <string name="no_data_found">No data found</string>
+
     <string name="enter_student_name">Enter student name</string>
     <string name="enter_parent_name">Enter parent name</string>
     <string name="submit">Submit</string>

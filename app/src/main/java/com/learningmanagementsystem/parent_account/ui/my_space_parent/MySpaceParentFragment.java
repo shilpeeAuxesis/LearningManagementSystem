@@ -15,9 +15,7 @@ import com.learningmanagementsystem.ui.constant.ProgressDialog;
 
 public class MySpaceParentFragment extends Fragment {
     private static final String TAG = "MySpaceParentFragment";
-    private MySpaceParentViewModel homeViewModel;
-    RecyclerView recyclerView;
-    TextView tvNoDataFound;
+    private MySpaceParentViewModel mySpaceParentViewModel;
     ProgressDialog pd;
 
     @Override
@@ -27,11 +25,9 @@ public class MySpaceParentFragment extends Fragment {
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel = ViewModelProviders.of(this).get(MySpaceParentViewModel.class);
+        mySpaceParentViewModel = ViewModelProviders.of(this).get(MySpaceParentViewModel.class);
         View root = inflater.inflate(R.layout.fragment_my_space_parent, container, false);
 
-        recyclerView =root.findViewById(R.id.recyclerView);
-        tvNoDataFound =root.findViewById(R.id.tvNoDataFound);
 
         /*final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {
@@ -47,6 +43,6 @@ public class MySpaceParentFragment extends Fragment {
     public void onResume() {
         super.onResume();
         // Set title bar
-        ((ParentDashboardActivity) getActivity()).setActionBarTitle(getString(R.string.menu_my_space));
+        ((ParentDashboardActivity)getActivity()).setActionBarTitle(getString(R.string.menu_my_space));
     }
 }
